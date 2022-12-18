@@ -1,0 +1,46 @@
+//Salman Asis Parohi_220401010011_IT102_Algoritma dan Pemrograman
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int pilihan;
+    char kembali;
+    
+    do{
+    cout << "Silahkan pilih (1-3) jumlah uang yang akan anda ambil" << endl;
+    cout << "1. " << "100.000\n";
+    cout << "2. " << "250.000\n";
+    cout << "3. " << "500.000\n";
+    cout << "Pilihan: ";
+    cin >> pilihan;
+    cout << endl;
+    switch (pilihan)
+    {
+        case 1:
+            cout << "Silahkan anda mengambil 100.000 uang anda " << endl;
+            break;
+        case 2:
+            cout << "Silahkan anda mengambil 250.000 uang anda " << endl;
+            break;
+        case 3:
+            cout << "Silahkan anda mengambil 500.000 uang anda " << endl;
+            break;
+        default:
+            cout << "Error..";
+    }
+    cout << endl;
+    
+    
+    cout << "Apakah anda ingin mengulang program (Y/N): ";
+    cin >> kembali;
+    cout << endl;
+    }
+    
+    while (kembali != 'N');
+        cout << "Terima kasih" << endl;
+    
+    return 0;
+}
