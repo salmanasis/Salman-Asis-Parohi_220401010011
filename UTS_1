@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int jumlah_baris, i, j;
+    char kembali;
+    
+    do{
+    cout << "Jumlah baris: ";
+    cin >> jumlah_baris;
+    cout << "Bintang(" << jumlah_baris << "):" << endl;
+    if (jumlah_baris % 2 == 0){
+        cout << "Anda memasukkan jumlah Genap. Masukkan hanya jumlah Ganjil" << endl << endl;
+        goto akhir;
+    }
+    else {
+        for (i = 1; i <= jumlah_baris; i++){
+            if (i == (jumlah_baris+1)/2)
+                for (j = 1; j <= jumlah_baris; j++){
+                    cout << "*" << " ";
+            }
+            else{
+                for (j = 1; j <= 1; j++){
+                cout << "*" << " ";
+                }}
+            
+            cout << endl;
+        }
+        
+    akhir :
+    cout << "Apakah anda ingin mengulang program (Y/N): ";
+    cin >> kembali;
+    cout << endl;
+    }}
+    while (kembali != 'N');
+        cout << "Terima kasih" << endl;
+    
+        
+    return 0;         
+}
